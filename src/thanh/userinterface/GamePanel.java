@@ -4,19 +4,20 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.awt.image.BufferedImage;
 
 public class GamePanel extends JPanel implements Runnable, KeyListener {
     private Thread thread;
     private boolean isRunning;
     private InputManager inputManager;
+
     public GamePanel() {
         inputManager = new InputManager();
     }
     @Override
     public void paint(Graphics g) {
-        g.setColor(Color.blue);
+        g.setColor(Color.white);
         g.fillRect(0, 0, GameFrame.SCREEN_WIDTH, GameFrame.SCREEN_HEIGHT);
-
     }
     public void startGame() {
         if(thread == null) {
