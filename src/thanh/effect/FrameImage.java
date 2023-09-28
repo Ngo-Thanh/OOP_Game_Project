@@ -20,22 +20,28 @@ public class FrameImage {
     }
 
     public int getImageWitdh() {
+
         return image.getWidth();
     }
     public  int getImageHeight() {
+
         return  image.getHeight();
     }
     public void setName(String name){
+
         this.name = name;
     }
     public String getName(){
+
         return name;
     }
 
     public BufferedImage getImage(){
+
         return image;
     }
     public void setImage(BufferedImage image){
+
         this.image = image;
     }
 
